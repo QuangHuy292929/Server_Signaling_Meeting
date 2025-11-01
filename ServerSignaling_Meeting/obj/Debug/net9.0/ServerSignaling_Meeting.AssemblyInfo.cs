@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServerSignaling_Meeting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f08d4c6929837e34497547be8805dae10f453fe0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6005904765045695d7736e8d9b91d3b060af28d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServerSignaling_Meeting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServerSignaling_Meeting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
