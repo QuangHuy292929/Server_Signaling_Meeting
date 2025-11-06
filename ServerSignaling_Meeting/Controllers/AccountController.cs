@@ -29,7 +29,6 @@ namespace SignalingServer.Controllers
             _signInManager = signInManager;
         }
 
-
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
         {
@@ -37,7 +36,20 @@ namespace SignalingServer.Controllers
             {
                 if (!ModelState.IsValid)
                 {
-                    return BadRequest(ModelState);
+                    return BadRequest(new
+                    {
+                        isSuccess = false,
+                        errorMessage = "Invalid request data"
+                    });
+                }
+
+                if (string.IsNullOrWhiteSpace(registerDto.Password))
+                {
+                    return BadRequest(new
+                    {
+                        isSuccess = false,
+                        errorMessage = "Password is required!"
+                    });
                 }
 
                 var user = new AppUser
@@ -46,47 +58,42 @@ namespace SignalingServer.Controllers
                     Email = registerDto.Email,
                 };
 
-                if (string.IsNullOrWhiteSpace(registerDto.Password))
-                {
-                    ModelState.AddModelError("Password", "Password is required!");
-                    return BadRequest(ModelState);
-                }
-
                 var result = await _userManager.CreateAsync(user, registerDto.Password);
-                if (result.Succeeded)
-                {
-                    var roleResult = await _userManager.AddToRoleAsync(user, "User");
-                    if (roleResult.Succeeded)
-                    {
-                        return Ok(
-                        new NewAccountDto
-                        {
-                            UserName = user.UserName,
-                            Email = user.Email,
-                            Token = _tokenService.CreateToken(user)
-                        });
-                    }
-                    else
-                    {
-                        return BadRequest(roleResult.Errors);
-                    }
 
-                }
-                else
+                if (!result.Succeeded)
                 {
-                    foreach (var error in result.Errors)
+                    return BadRequest(new
                     {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
-                    return BadRequest(ModelState);
+                        isSuccess = false,
+                        errorMessage = string.Join("; ", result.Errors.Select(e => e.Description))
+                    });
                 }
+
+                var roleResult = await _userManager.AddToRoleAsync(user, "User");
+
+                if (!roleResult.Succeeded)
+                {
+                    return BadRequest(new
+                    {
+                        isSuccess = false,
+                        errorMessage = "User created but failed to assign role"
+                    });
+                }
+
+                return Ok(new
+                {
+                    isSuccess = true,
+                    userName = user.UserName,
+                    email = user.Email,
+                    token = _tokenService.CreateToken(user)
+                });
             }
             catch (DbUpdateException ex)
             {
                 return BadRequest(new
                 {
-                    message = "Lỗi khi lưu dữ liệu",
-                    details = ex.InnerException?.Message
+                    isSuccess = false,
+                    errorMessage = ex.InnerException?.Message ?? "Database error"
                 });
             }
         }
@@ -96,30 +103,54 @@ namespace SignalingServer.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(new
+                {
+                    isSuccess = false,
+                    errorMessage = "Invalid request data"
+                });
             }
 
-            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName.Equals(loginDto.Username));
+            var user = await _userManager.Users
+                .FirstOrDefaultAsync(u => u.NormalizedUserName == loginDto.Username.ToUpper());
+
             if (user == null)
             {
-                return Unauthorized("Invalid username or password.");
+                return Unauthorized(new
+                {
+                    isSuccess = false,
+                    errorMessage = "Invalid username or password"
+                });
             }
 
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, true);
-            if(result.IsLockedOut)
+
+            if (result.IsLockedOut)
             {
-                return Unauthorized("User account is locked.");
-            }
-            if(!result.Succeeded) return Unauthorized("Invalid username or password.");
-            return Ok(
-                new NewAccountDto
+                return Unauthorized(new
                 {
-                    UserName = user.UserName,
-                    Email = user.Email,
-                    Token = _tokenService.CreateToken(user)
-                }
-            );
+                    isSuccess = false,
+                    errorMessage = "User account is locked"
+                });
+            }
+
+            if (!result.Succeeded)
+            {
+                return Unauthorized(new
+                {
+                    isSuccess = false,
+                    errorMessage = "Invalid username or password"
+                });
+            }
+
+            return Ok(new
+            {
+                isSuccess = true,
+                userName = user.UserName,
+                email = user.Email,
+                token = _tokenService.CreateToken(user)
+            });
         }
+
 
         [HttpPut("lock-user/{userId}")]
         [Authorize(Roles = "Admin")]

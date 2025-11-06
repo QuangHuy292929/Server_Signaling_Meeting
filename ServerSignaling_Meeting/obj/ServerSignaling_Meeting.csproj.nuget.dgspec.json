@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj": {}
+    "D:\\Nam3\\Javaa\\ServerSignaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj": {
+    "D:\\Nam3\\Javaa\\ServerSignaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj",
+        "projectUniqueName": "D:\\Nam3\\Javaa\\ServerSignaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj",
         "projectName": "ServerSignaling_Meeting",
-        "projectPath": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj",
-        "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\obj\\",
+        "projectPath": "D:\\Nam3\\Javaa\\ServerSignaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Nam3\\Javaa\\ServerSignaling_Meeting\\ServerSignaling_Meeting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\OS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -110,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

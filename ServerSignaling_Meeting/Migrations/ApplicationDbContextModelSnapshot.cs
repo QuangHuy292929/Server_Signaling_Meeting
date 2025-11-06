@@ -154,13 +154,13 @@ namespace ServerSignaling_Meeting.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9314b2a0-a93d-40ad-8549-f30e1fd5837c"),
+                            Id = new Guid("7e5620c5-f91f-477c-8ee0-6ab246299dac"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("12701bc8-7687-4279-9b83-dd09c5da5a90"),
+                            Id = new Guid("89e9fc9b-27de-412d-bd65-d519790d2079"),
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -211,10 +211,6 @@ namespace ServerSignaling_Meeting.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("SecurityStamp")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<bool>("TwoFactorEnabled")
