@@ -225,5 +225,21 @@ namespace SignalingServer.Controllers
             await _jgrepo.UnblockMemberAsync(groupId, userId);
             return Ok(new { success = true, message = "Member unblocked" });
         }
+
+        // Join group chat
+        // POST: api/groupchat/{groupId}/join
+        [HttpPost("{groupId}/join")]
+        public async Task<IActionResult> JoinGroup(Guid groupId)
+        {
+            var userId = User.GetCurrentUserId();
+
+            // Nếu đã trong group rồi
+            if (await _jgrepo.IsUserInGroupAsync(userId, groupId))
+                return Ok(new { success = false, message = "Already joined" });
+
+            var member = await _jgrepo.AddMemberToGroupAsync(groupId, userId, "member");
+            return Ok(new { success = true, data = member });
+        }
+
     }
 }

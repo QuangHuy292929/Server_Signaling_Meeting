@@ -2,6 +2,7 @@
 using ServerSignaling_Meeting.Data;
 using ServerSignaling_Meeting.Interfaces;
 using ServerSignaling_Meeting.Models;
+using System.Security.Cryptography;
 
 namespace ServerSignaling_Meeting.Repositories
 {
@@ -45,12 +46,29 @@ namespace ServerSignaling_Meeting.Repositories
                 .ToListAsync();
         }
 
+        public static string GenerateGroupKey(int length = 10)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var bytes = new byte[length];
+            var result = new char[length];
 
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(bytes);
+            }
+
+            for (int i = 0; i < length; i++)
+            {
+                result[i] = chars[bytes[i] % chars.Length];
+            }
+
+            return new string(result);
+            }
 
         //CREATE GROUP---------------------------------
         public async Task<GroupChat?> CreateGroupAsync(string groupName, Guid creatorId)
         {
-            var groupKey = Guid.NewGuid().ToString();
+            var groupKey = GenerateGroupKey(10);
             var group = new GroupChat
             {
                 Id = Guid.NewGuid(),

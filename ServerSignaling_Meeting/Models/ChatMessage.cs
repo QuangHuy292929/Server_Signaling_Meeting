@@ -20,8 +20,8 @@ namespace ServerSignaling_Meeting.Models
 
         public string TypeMessage { get; set; } // text, image, file...
         public string ContentMessage { get; set; }
-        public string FileName { get; set; }
-        public string FileUrl { get; set; }
+        public string? FileName { get; set; }
+        public string? FileUrl { get; set; }
 
         public DateTime SendAt { get; set; }
     }

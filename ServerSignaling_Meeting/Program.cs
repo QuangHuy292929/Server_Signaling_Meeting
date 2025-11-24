@@ -17,6 +17,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization();
 builder.Services.AddSignalR();
+builder.Services.AddDirectoryBrowser();
+
 
 // Database Configuration
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -120,4 +122,12 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
+app.UseCors("AllowAll");
+app.UseStaticFiles(); // Enable serving files from wwwroot
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new Microsoft.Extensions.FileProviders.PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "uploads")),
+    RequestPath = "/uploads"
+});
 app.Run();

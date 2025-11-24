@@ -10,8 +10,7 @@ namespace ServerSignaling_Meeting.Models
         public Guid Id { get; set; }
         public string GroupKey { get; set; }
         public string GroupName { get; set; }
-        public string Status { get; set; } // ACTIVE, BLOCK
-
+        public string Status { get; set; } 
         public List<JoinGroup> JoinGroups { get; set; } = new();
         public List<ChatMessage> ChatMessages { get; set; } = new();
     }

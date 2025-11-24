@@ -156,7 +156,7 @@ namespace ServerSignaling_Meeting.Hubs
         /// <summary>
         /// Gửi tin nhắn đến nhóm
         /// </summary>
-        public async Task SendGroupMessage(Guid groupId, string message, string typeMessage = "TEXT")
+        public async Task SendGroupMessage(Guid groupId, string message, string typeMessage = "TEXT", string fileName = null, string fileUrl = null)
         {
             var userId = Context.User.GetCurrentUserId();
             var username = Context.User.GetUserName();
@@ -192,7 +192,9 @@ namespace ServerSignaling_Meeting.Hubs
                     GroupId = groupId,
                     UserId = userId,
                     ContentMessage = message,
-                    TypeMessage = typeMessage
+                    TypeMessage = typeMessage,
+                    FileName = fileName,    
+                    FileUrl = fileUrl       
                 });
 
                 // Gửi real-time đến tất cả thành viên trong group
@@ -204,6 +206,9 @@ namespace ServerSignaling_Meeting.Hubs
                     Username = username,
                     Content = message,
                     TypeMessage = typeMessage,
+                    FileName = fileName,    
+                    FileUrl = fileUrl,
+
                     SendAt = savedMessage.SendAt
                 });
 
