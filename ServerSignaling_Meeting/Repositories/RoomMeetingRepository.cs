@@ -54,11 +54,26 @@ namespace ServerSignaling_Meeting.Repositories
                 .CountAsync();
         }
 
+        private string GenerateRoomKey()
+        {
+            const string chars = "abcdefghijklmnopqrstuvwxyz";
+            var rand = new Random();
+
+            string RandomPart()
+            {
+                return new string(Enumerable.Range(0, 3)
+                    .Select(_ => chars[rand.Next(chars.Length)])
+                    .ToArray());
+            }
+
+            return $"{RandomPart()}-{RandomPart()}-{RandomPart()}";
+        }
+
 
         //CREATE ROOM---------------------------------
         public async Task<RoomMeeting> CreateRoomAsync(string roomName, int max, Guid hostId)
         {
-            var roomKey = Guid.NewGuid().ToString();
+            var roomKey = GenerateRoomKey();
             var room = new RoomMeeting
             {
                 Id = Guid.NewGuid(),
@@ -79,6 +94,7 @@ namespace ServerSignaling_Meeting.Repositories
                 RoomId = room.Id,
                 UserId = hostId,
                 Role = "host",
+                status = "joined",
                 JoinAt = DateTime.UtcNow
             };
 

@@ -74,7 +74,8 @@ namespace ServerSignaling_Meeting.Repositories
                 RoomId = roomId,
                 UserId = userId,
                 Role = role,
-                JoinAt = DateTime.UtcNow
+                status = "pending",
+                JoinAt = DateTime.Now
             };
 
             _context.JoinMeetings.Add(joinMeeting);
@@ -82,6 +83,31 @@ namespace ServerSignaling_Meeting.Repositories
 
             _logger.LogInformation($"User {userId} joined room {roomId}");
             return joinMeeting;
+        }
+
+        public async Task UpdateStatusAsync(Guid joiRoomId, Guid roomId, Guid userId, string status, DateTime? joinAt)
+        {
+            var recordToUpdate = new JoinMeeting
+            {
+                Id = joiRoomId,
+                status = status,
+                JoinAt = joinAt
+            };
+
+            var trackedEntity = _context.JoinMeetings.Local.FirstOrDefault(e => e.Id == joiRoomId);
+
+            if (trackedEntity != null)
+            {
+                // 2. Nếu có, ngắt theo dõi đối tượng cũ
+                _context.Entry(trackedEntity).State = EntityState.Detached;
+            }
+
+            _context.JoinMeetings.Attach(recordToUpdate);
+
+            _context.Entry(recordToUpdate).Property(j => j.JoinAt).IsModified = true;
+            _context.Entry(recordToUpdate).Property(j => j.status).IsModified = true;
+
+            await _context.SaveChangesAsync();
         }
 
 
@@ -101,10 +127,19 @@ namespace ServerSignaling_Meeting.Repositories
 
 
         //VALIDATIONS--------------------------------
+
         public async Task<bool> IsUserInRoomAsync(Guid userId, Guid roomId)
         {
             return await _context.JoinMeetings
                 .AnyAsync(jm => jm.UserId == userId && jm.RoomId == roomId && jm.LeaveAt == null);
+        }
+
+        //Get userId via username
+        public async Task<Guid> GetUserIdByUsernameAsync(string username)
+        {
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.UserName == username);
+            return user.Id;
         }
 
         public async Task<bool> CanJoinRoomAsync(Guid roomId)
@@ -118,6 +153,12 @@ namespace ServerSignaling_Meeting.Repositories
 
             var activeCount = room.JoinMeetings.Count(jm => jm.LeaveAt == null);
             return activeCount < room.Max;
+        }
+
+        public async Task UpdateAsync(JoinMeeting participant)
+        {
+            _context.JoinMeetings.Update(participant);
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -9,10 +9,15 @@ namespace ServerSignaling_Meeting.Interfaces
         Task<IEnumerable<JoinMeeting>> GetMeetingsByUserIdAsync(Guid userId);
         Task<JoinMeeting?> GetParticipantByUserAndRoomAsync(Guid userId, Guid roomId);
         Task<int> GetRoomActiveParticipantsCountAsync(Guid roomId);
+        Task<Guid> GetUserIdByUsernameAsync(string userName);
 
         // JOIN & LEAVE
         Task<JoinMeeting> JoinMeetingAsync(Guid roomId, Guid userId, string role = "participant");
         Task LeaveMeetingAsync(Guid roomId, Guid userId);
+
+        Task UpdateStatusAsync(Guid joinRoomId, Guid roomId, Guid userId, string status, DateTime? joinAt);
+
+        Task UpdateAsync(JoinMeeting participant);
 
         // CHECK
         Task<bool> IsUserInRoomAsync(Guid userId, Guid roomId);

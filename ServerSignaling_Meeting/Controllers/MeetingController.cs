@@ -1,6 +1,7 @@
 ﻿// Controllers/MeetingController.cs
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ServerSignaling_Meeting.Dtos;
 using ServerSignaling_Meeting.Dtos.RoomDto;
 using ServerSignaling_Meeting.Extensions;
@@ -233,32 +234,59 @@ namespace ServerSignaling_Meeting.Controllers
                 return BadRequest(new { success = false, message = "Room is full" });
 
             // Kiểm tra user đã trong room chưa
-            var isInRoom = await _joinRepo.IsUserInRoomAsync(userId, roomId);
-            if (isInRoom)
-                return BadRequest(new { success = false, message = "Already in room" });
-
-            // Join room
-            var joinMeeting = await _joinRepo.JoinMeetingAsync(roomId, userId, "participant");
-
-            return Ok(new
+            var participant = await _joinRepo.GetParticipantByUserAndRoomAsync(userId, roomId);
+            if (participant != null)
             {
-                success = true,
-                message = "Joined room successfully",
-                data = new
+                if (participant.status == "Banned") return BadRequest("Bạn bị cấm vào phòng.");
+
+                participant.status ="pending";
+                participant.LeaveAt = null; // Xóa thời gian rời đi cũ
+                participant.JoinAt = DateTime.UtcNow; // Cập nhật giờ vào mới
+
+                await _joinRepo.UpdateAsync(participant);
+
+                return Ok(new
                 {
-                    joinMeeting.Id,
-                    joinMeeting.RoomId,
-                    joinMeeting.UserId,
-                    Username = username,
-                    joinMeeting.Role,
-                    joinMeeting.JoinAt,
-                    Room = new
+                    success = true,
+                    message = "Joined room successfully",
+                    data = new
                     {
-                        room.RoomName,
-                        room.RoomKey
+                        participant.Id,
+                        participant.RoomId,
+                        participant.UserId,
+                        Username = username,
+                        participant.Role,
+                        Room = new
+                        {
+                            room.RoomName,
+                            room.RoomKey
+                        }
                     }
-                }
-            });
+                });
+            } else {
+                // Join room
+                var joinMeeting = await _joinRepo.JoinMeetingAsync(roomId, userId, "participant");
+
+                return Ok(new
+                {
+                    success = true,
+                    message = "Joined room successfully",
+                    data = new
+                    {
+                        joinMeeting.Id,
+                        joinMeeting.RoomId,
+                        joinMeeting.UserId,
+                        Username = username,
+                        joinMeeting.Role,
+                        joinMeeting.JoinAt,
+                        Room = new
+                        {
+                            room.RoomName,
+                            room.RoomKey
+                        }
+                    }
+                });
+            }
         }
 
         /// Join room bằng RoomKey (từ link invite)
@@ -323,10 +351,11 @@ namespace ServerSignaling_Meeting.Controllers
         }
 
         /// Kick participant (chỉ host)
-        [HttpPost("rooms/{roomId}/participants/{participantUserId}/kick")]
-        public async Task<IActionResult> KickParticipant(Guid roomId, Guid participantUserId)
+        [HttpPost("rooms/{roomId}/participants/{userName}/kick")]
+        public async Task<IActionResult> KickParticipant(Guid roomId, string userName)
         {
             var userId = User.GetCurrentUserId();
+            var participantUserId = await _joinRepo.GetUserIdByUsernameAsync(userName);
 
             // Kiểm tra quyền: chỉ host mới kick được
             var host = await _joinRepo.GetParticipantByUserAndRoomAsync(userId, roomId);
@@ -361,10 +390,11 @@ namespace ServerSignaling_Meeting.Controllers
                 m.Role,
                 m.JoinAt,
                 m.LeaveAt,
-
-                Duration = m.LeaveAt.HasValue ? (double?)(m.LeaveAt.Value - m.JoinAt).TotalMinutes : null
+                    
+                Duration = m.LeaveAt.HasValue && m.JoinAt.HasValue ? (double?)(m.LeaveAt.Value.Subtract(m.JoinAt.Value).TotalMinutes) : null
             });
 
+            // With this corrected line:
             return Ok(new { success = true, data = result });
         }
     }

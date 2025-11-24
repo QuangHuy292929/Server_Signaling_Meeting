@@ -1,0 +1,375 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\controllers\\meetingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\controllers\\meetingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\repositories\\joinmeetingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\repositories\\joinmeetingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\controllers\\meetingroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\controllers\\meetingroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\repositories\\roommeetingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\repositories\\roommeetingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\controllers\\groupchatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\controllers\\groupchatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\controllers\\chatmessagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\controllers\\chatmessagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\dtos\\accountdto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\dtos\\accountdto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\dtos\\accountdto\\newaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\dtos\\accountdto\\newaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\dtos\\accountdto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\dtos\\accountdto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\repositories\\chatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\repositories\\chatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\interfaces\\ichatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\interfaces\\ichatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\extendsions\\claimextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\extendsions\\claimextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\data\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\data\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\serversignaling_meeting.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\serversignaling_meeting.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|d:\\repo\\dotnet\\server_signaling_meeting\\serversignaling_meeting\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025B115F-D70D-4665-8E30-7D5EA89D273A}|ServerSignaling_Meeting\\ServerSignaling_Meeting.csproj|solutionrelative:serversignaling_meeting\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JoinMeetingRepository.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Repositories\\JoinMeetingRepository.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Repositories\\JoinMeetingRepository.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Repositories\\JoinMeetingRepository.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Repositories\\JoinMeetingRepository.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwHAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:34:11.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomMeetingRepository.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Repositories\\RoomMeetingRepository.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Repositories\\RoomMeetingRepository.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Repositories\\RoomMeetingRepository.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Repositories\\RoomMeetingRepository.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:34:06.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroupChatController.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\GroupChatController.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Controllers\\GroupChatController.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\GroupChatController.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Controllers\\GroupChatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:32:21.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MeetingController.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\MeetingController.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Controllers\\MeetingController.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\MeetingController.cs*",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Controllers\\MeetingController.cs*",
+              "ViewState": "AgIAADsBAAAAAAAAAAAiwEcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:32:16.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeetingRoomController.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\MeetingRoomController.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Controllers\\MeetingRoomController.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\MeetingRoomController.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Controllers\\MeetingRoomController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:32:13.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Controllers\\MessageController.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Controllers\\MessageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:32:13.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatMessageController.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\ChatMessageController.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Controllers\\ChatMessageController.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\ChatMessageController.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Controllers\\ChatMessageController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:40:08.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:39:55.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Dtos\\AccountDto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Dtos\\AccountDto\\LoginDto.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Dtos\\AccountDto\\LoginDto.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Dtos\\AccountDto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:40:23.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChatMessageRepository.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Repositories\\ChatMessageRepository.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Repositories\\ChatMessageRepository.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Repositories\\ChatMessageRepository.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Repositories\\ChatMessageRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwGYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:40:42.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswBwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-02T14:39:48.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NewAccountDto.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Dtos\\AccountDto\\NewAccountDto.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Dtos\\AccountDto\\NewAccountDto.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Dtos\\AccountDto\\NewAccountDto.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Dtos\\AccountDto\\NewAccountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T17:25:49.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IChatMessageRepository.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Interfaces\\IChatMessageRepository.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Interfaces\\IChatMessageRepository.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Interfaces\\IChatMessageRepository.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Interfaces\\IChatMessageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T16:52:58.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Program.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Program.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Program.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:05:29.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Services\\TokenService.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Services\\TokenService.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T15:13:09.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Dtos\\AccountDto\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Dtos\\AccountDto\\RegisterDto.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Dtos\\AccountDto\\RegisterDto.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Dtos\\AccountDto\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T16:52:18.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T16:52:27.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppRole.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Data\\AppRole.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Data\\AppRole.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Data\\AppRole.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Data\\AppRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T16:52:38.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\appsettings.json",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\appsettings.json",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\appsettings.json",
+              "RelativeToolTip": "ServerSignaling_Meeting\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T15:05:24.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClaimExtension.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Extendsions\\ClaimExtension.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Extendsions\\ClaimExtension.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Extendsions\\ClaimExtension.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Extendsions\\ClaimExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:40:31.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ServerSignaling_Meeting.http",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.http",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\ServerSignaling_Meeting.http",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\ServerSignaling_Meeting.http",
+              "RelativeToolTip": "ServerSignaling_Meeting\\ServerSignaling_Meeting.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-11-04T15:05:34.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "ServerSignaling_Meeting\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\Repo\\DotNET\\Server_Signaling_Meeting\\ServerSignaling_Meeting\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "ServerSignaling_Meeting\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:40:35.979Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

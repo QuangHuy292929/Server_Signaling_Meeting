@@ -97,6 +97,17 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin() 
+                  .AllowAnyMethod() 
+                  .AllowAnyHeader();
+        });
+});
+
 
 // Dependency Injection
 builder.Services.AddScoped<ITokenService, TokenService>();
@@ -114,10 +125,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowAll");
 app.MapHub<ChatHub>("/chatHub");
 app.MapHub<MeetingHub>("/meetingHub");
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
@@ -131,3 +142,4 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/uploads"
 });
 app.Run();
+    

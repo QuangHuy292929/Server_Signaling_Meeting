@@ -19,7 +19,8 @@ namespace ServerSignaling_Meeting.Models
         public RoomMeeting RoomMeeting { get; set; }
 
         public string Role { get; set; } // host, participant
-        public DateTime JoinAt { get; set; }
+        public string status { get; set; }
+        public DateTime? JoinAt { get; set; }
         public DateTime? LeaveAt { get; set; }
     }
 }

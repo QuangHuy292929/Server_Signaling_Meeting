@@ -83,6 +83,7 @@ namespace SignalingServer.Controllers
                 return Ok(new
                 {
                     isSuccess = true,
+                    userId = user.Id,
                     userName = user.UserName,
                     email = user.Email,
                     token = _tokenService.CreateToken(user)
@@ -145,6 +146,7 @@ namespace SignalingServer.Controllers
             return Ok(new
             {
                 isSuccess = true,
+                userId = user.Id,
                 userName = user.UserName,
                 email = user.Email,
                 token = _tokenService.CreateToken(user)
